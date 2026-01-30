@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Theos
-        uses: theos/setup-theos@master # Sửa lỗi "not found" triệt để
+        uses: theos/setup-theos@master
       - name: Build
         run: |
           unzip -o src.zip
@@ -14,5 +14,5 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: Mod_H5GG_Cua_Ban
+          name: Bản_Mod_H5GG
           path: packages/*.tipa
